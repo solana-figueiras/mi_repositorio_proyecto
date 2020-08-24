@@ -1,0 +1,72 @@
+* {
+	font-family: 'Lato', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+}
+
+.nav {
+	position: fixed;
+	width: 100%;
+	/*el alto debe ser definido por su contenido, forzarlo puede romperlo*/
+	margin: 5px 10px 50px 10px;
+	padding: 5px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #e8e8e8;
+	z-index: 11;
+
+	
+
+		ul {
+   		list-style: none;
+   		font-size:0; /* truco por el uso de inline-block*/
+   		margin-right: 10px;
+   		display: inline-block;
+   		justify-content: flex-end;
+		
+
+				li {
+   				display: inline-block;
+   				position:relative;
+   				font-size: 20px
+				}
+		
+
+				ul {
+   				position: absolute;
+   				display: none;
+				
+
+					li {
+   					display: block;
+					}
+				
+
+					li:hover ul {
+				    display:block;
+					}
+				}	
+		}
+
+}
+
+.nav img {
+	float: left;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: black;
+}

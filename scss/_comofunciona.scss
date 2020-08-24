@@ -1,0 +1,50 @@
+.comoFunciona {
+	padding: 30px;
+}
+
+.iconoIzquierda {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.iconoIzquierd__p {
+	padding: 0px;
+	margin: 0px;
+	width: 422px;
+}
+
+.iconoIzquierda__img {
+	padding: 10px;
+	margin: 30px;
+	width: 80px;
+	object-fit: cover;
+}
+
+.iconoDerecha {
+	padding: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.iconoDerecha__p {
+	padding: 0px;
+	width: 422px;
+}
+
+.iconoDerecha__img {
+	padding: 10px;
+	margin: 30px;
+	width: 80px;
+	object-fit: cover;
+}
+
+
+.estiloCarousel {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}

@@ -1,0 +1,166 @@
+$cool-blue: #8088ff;
+$cool-purple: #4A53CC;
+
+
+.fotoPasajero {
+	margin-top: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+#grilla {
+	display: grid;
+	margin-top: 200px;
+	margin-bottom: 100px;
+	grid-template-areas:
+     "nav top top"
+     "nav productos publicidad"
+     "nav servicios publicidad"
+     "footer footer footer";
+	grid-template-rows: repeat(4, 100px); 
+	grid-template-columns: repeat(3, 400px);
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+	height: 500px;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+}
+
+.border {
+	font-size: 20px;
+}
+
+top {
+	grid-area: top;
+	background-color: $cool-blue;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: bold;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+pie {
+	grid-area: footer;
+	background-color: $cool-blue;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: bold;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section#productos {
+	grid-area: productos; 
+	background-color: $cool-purple; 
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: bold;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+section#servicios {
+	grid-area: servicios; 
+	text-align: center;
+	background-color: $cool-blue;
+	font-family: 'Montserrat', sans-serif;
+	font-size: bold;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+navegacion {
+	grid-area: nav;
+	background-color: $cool-purple;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: bold;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+aside {
+	grid-area: publicidad;
+	background-color: $cool-purple;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: bold;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+top:hover {
+	transform: translate(5px, 5px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+pie:hover {
+	transform: translate(5px, 5px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section#productos:hover { 
+	transform: translate(5px, 5px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+
+section#servicios:hover {
+	transform: translate(5px, 5px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+navegacion:hover {
+	transform: translate(5px, 5px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+aside:hover {
+	transform: translate(5px, 5px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.gratis {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 50px;
+	text-align: center;
+	background-color: $cool-blue;
+	/*para hacer una animación*/
+	animation-name: efecto_uno;
+	animation-timing-function: ease-in;
+	animation-duration: 10s;
+	animation-delay: 2s;
+}
+
+@keyframes efecto_uno {
+	0%{width: 200px;}
+	25%{width: 300px;}
+	50%{width: 500px;}
+	70%{width: 700px;}
+	100%{width: 100%;
+	background-color: $cool-purple;}
+}
+
+.gratis__cero {
+	font-size: 100px;
+}
+
